@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Dish Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <p><span>Your</span>Dish</p>
+        </div>
+        <ul class="menu">
+            <li><a href="#home">Acceuil</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about_us">A Propos</a></li>
+            <li><a href="#reservation">Réservation</a></li>
+        </ul>
+
+        <!-- menu responsive -->
+        <div class="toggle_menu"></div>
+    </header>
+
+    <!-- section acceuil home -->
+
+    <section id="home">
+        <div class="left">
+            <h4>Our New Menu</h4>
+            <h1>AFRICAN CHICKEN</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi eveniet sed quidem reprehenderit libero officiis.</p>
+             <button><a href="#">commander maintenant</a></button>
+        </div>
+        <div class="right">
+            <img src="images/img1.png">
+        </div>
+    </section>
+
+       <!-- section  menu -->
+
+       <section id="menu">
+           <h4 class="mini_title">Ours Menu</h4>
+           <h2 class="title">Popular Menu</h2>
+           <div class="dishes">
+               <div class="dish">
+                   <img src="images/img1.png">
+                   <p>Chicken Orido</p>
+                   <h2>$65.99</h2>
+                   <a href="#">bUY</a>
+               </div>
+               <div class="dish">
+                    <img src="images/img2.png">
+                    <p>Chicken Orido</p>
+                    <h2>$26.99</h2>
+                    <a href="#">bUY</a>
+               </div>
+               <div class="dish">
+                    <img src="images/img3.png">
+                    <p>Chicken Orido</p>
+                    <h2>$54.99</h2>
+                    <a href="#">bUY</a>
+                </div>
+                <div class="dish">
+                        <img src="images/img4.png">
+                        <p>Chicken Orido</p>
+                        <h2>$89.99</h2>
+                        <a href="#">bUY</a>
+                </div>
+                <div class="dish">
+                    <img src="images/img5.png">
+                    <p>Chicken Orido</p>
+                    <h2>$78.99</h2>
+                    <a href="#">bUY</a>
+               </div>
+               <div class="dish">
+                <img src="images/img6.png">
+                <p>Chicken Orido</p>
+                <h2>$70.99</h2>
+                <a href="#">bUY</a>
+           </div>
+
+           </div>
+       </section>
+
+
+       <!-- section about us -->
+
+       <section id="about_us">
+            <h4 class="mini_title">About Us</h4>
+            <h2 class="title">Why choose us ?</h2>
+            <div class="about">
+                <div class="left">
+                    <img src="images/img-about-us.png">
+                </div>
+                <div class="right">
+                    <h3>Best Food in The Word</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae est, iure culpa ipsa tempora explicabo ullam similique? Ipsum, est, beatae adipisci autem dolores, dolore eveniet mollitia quibusdam eius provident fugiat!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ipsa non quis pariatur enim fugit ratione. Unde maiores veritatis eaque accusamus minus sunt, eligendi nisi officiis quis vitae dignissimos officia.</p>
+                    <button><a href="#">Learn More</a></button>
+                </div>
+            </div>
+       </section>
+
+
+       <!-- section comments -->
+      <section class="comment_section">
+            <h4 class="mini_title">Comments</h4>
+            <h2 class="title"> What People this about us</h2>
+            <div class="comments">
+                <div class="comment">
+                    <div>
+                        <img src="images/img1.png">
+                        <h4>Robert kiyosaki</h4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, sequi repellat. Velit, temporibus! Repellat velit delectus vero suscipit ut, consequatur atque molestias obcaecati tenetur dignissimos! Eius eos reprehenderit aspernatur molestiae?</p>
+                </div>
+                <div class="comment">
+                    <div>
+                        <img src="images/img5.png">
+                        <h4>Albert Nanter</h4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, sequi repellat. Velit, temporibus! Repellat velit delectus vero suscipit ut, consequatur atque molestias obcaecati tenetur dignissimos! Eius eos reprehenderit aspernatur molestiae?</p>
+                </div>
+                <div class="comment">
+                    <div>
+                        <img src="images/img6.png">
+                        <h4>Smith Johnson</h4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, sequi repellat. Velit, temporibus! Repellat velit delectus vero suscipit ut, consequatur atque molestias obcaecati tenetur dignissimos! Eius eos reprehenderit aspernatur molestiae?</p>
+                </div>
+
+
+            </div>
+      </section>
+
+      <!-- section reservation -->
+      <section id="reservation">
+        <h4 class="mini_title">reservation</h4>
+        <h2 class="title"> fill this form to make a reservation</h2>
+        <form action="http://localhost:3000" method="post">
+            <label for="name">Your name</label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="number">Numéro</label>
+  <input type="text" id="number" name="number"><br><br>
+  <label for="date">Date </label>
+  <input type="date" id="date" name="date"><br><br>
+  <input type="submit" value="MAKE YOUR RESERVATION">
+            
+        </form>
+      </section>
+
+
+      <!-- footer -->
+      <footer>
+          <div class="services_list">
+              <div class="service">
+                  <img src="images/clock.png" alt="">
+                  <h2>Ouverture</h2>
+                  <p>10h30 à 23h45</p>
+                  <p>23h45 à 9h30</p>
+              </div>
+
+              <div class="service">
+                <img src="images/pin.png" alt="">
+                <h2>Adresses</h2>
+                <p>France-Paris</p>
+                <p>Bénin-Cotonou</p>
+            </div>
+            <div class="service">
+                <img src="images/email.png" alt="">
+                <h2>Emails</h2>
+                <p>moulayesy@gmail.com</p>
+                <p>your.dish@gmail.com</p>
+            </div>
+            <div class="service">
+                <img src="images/call.png" alt="">
+                <h2>Numbers</h2>
+                <p>+223 54454544</p>
+                <p>+223 75687515</p>
+            </div>
+            
+            <hr>
+          </div>
+
+          <p class="footer_text">Réalisé par <span>Moulaye SY</span> | Tous les droits sont réservés.</p>
+      </footer>
+
+
+      <script>
+          var small_menu = document.querySelector('.toggle_menu')
+          var menu = document.querySelector('.menu')
+          var Airtable = require('airtable');
+          var base = new Airtable({apiKey: 'YpategtnaZHuGXjQ6O.0f2df8d0859754fd11af1840fab0ff90e2164e4d71413582706625115514b4f2'}).base('appPCK4VBMWBLYOKa');
+          small_menu.onclick = function(){
+               small_menu.classList.toggle('active');
+               menu.classList.toggle('responsive');
+          }
+          
+
+          
+// Code pour déclencher l'ajout d'enregistrements lors de la soumission du formulaire
+document.querySelector('form').addEventListener('submit', function (e) {
+  e.preventDefault(); // Empêche le formulaire de se soumettre normalement
+
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var number = document.getElementById('number').value;
+  var date = document.getElementById('date').value;
+
+  // Utilisez les valeurs des champs pour créer un nouvel enregistrement
+  base('appPCK4VBMWBLYOKa').create([
+      {
+        "fields": {
+          "Name ": name,
+          "email": email,
+          "Number": number,
+          "Date": date
+        }
+      }
+    ], function (err, records) {
+      if (err) {
+        console.error(err);
+        return;
+      }
+      records.forEach(function (record) {
+        console.log('Nouvel enregistrement créé avec l\'ID : ' + record.getId());
+      });
+      
+      // Affichez un message de succès à l'utilisateur
+      alert('Votre réservation a été bien pris en compte !');
+    });
+  });
+</script>
+</body>
+</html>
